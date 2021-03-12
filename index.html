@@ -1,35 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2022.2">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
-</head>
-<body>
-<p class="p1"><br></p>
-<p class="p2">&lt;html lang="en"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span>&lt;head&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span>class NSTouchBar : NSObject</p>
-<p class="p2">override func makeTouchBar() -&gt; NSTouchBar? {</p>
-<p class="p2"><span class="Apple-converted-space">    </span>let mainBar = NSTouchBar()</p>
-<p class="p2"><span class="Apple-converted-space">    </span>mainBar.delegate = self<span class="Apple-converted-space">    </span>mainBar.customizationIdentifier = .imageViewer</p>
-<p class="p2"><span class="Apple-converted-space">    </span>mainBar.defaultItemIdentifiers = [.sharingPicker, .strokePopover, .strokeColorPicker, .photoPicker, .flexibleSpace, .clearButton, .otherItemsProxy]</p>
-<p class="p2"><span class="Apple-converted-space">    </span>mainBar.customizationAllowedItemIdentifiers = [.strokeSlider, .strokePopover, .photoPicker, .strokeColorPicker, .clearButton, .sharingPicker, .flexibleSpace]</p>
-<p class="p2"><span class="Apple-converted-space">    </span>mainBar.principalItemIdentifier = .photoPicker</p>
-<p class="p2"><span class="Apple-converted-space">    </span>return mainBar</p>
-<p class="p2">}</p>
-<p class="p2"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span>&lt;body&gt;</p>
-<p class="p1"><br></p>
-<p class="p2"><span class="Apple-converted-space">  </span>&lt;/body&gt;</p>
-<p class="p2">&lt;/html&gt;</p>
-</body>
+
+<html lang="en">
+
+  <head>
+
+    <script>
+
+    class NSTouchBar : NSObject
+
+override func makeTouchBar() -> NSTouchBar? {
+
+    let mainBar = NSTouchBar()
+
+    mainBar.delegate = self    mainBar.customizationIdentifier = .imageViewer
+
+    mainBar.defaultItemIdentifiers = [.sharingPicker, .strokePopover, .strokeColorPicker, .photoPicker, .flexibleSpace, .clearButton, .otherItemsProxy]
+
+    mainBar.customizationAllowedItemIdentifiers = [.strokeSlider, .strokePopover, .photoPicker, .strokeColorPicker, .clearButton, .sharingPicker, .flexibleSpace]
+
+    mainBar.principalItemIdentifier = .photoPicker
+
+    return mainBar
+
+}
+
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+  </body>
+
 </html>
